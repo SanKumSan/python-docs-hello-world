@@ -23,5 +23,5 @@ def get_storage_test():
     blob_list = []
     for blob in container_client.list_blobs():
         blob_list.append(blob)
-    total_blobs = 'total blob files :' + len(blob_list)
+    total_blobs = 'total blob files :' + str(len(blob_list))
     return total_blobs
