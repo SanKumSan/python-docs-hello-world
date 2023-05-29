@@ -22,8 +22,8 @@ container_client = blob_service_client.get_container_client(container_name)
 def get_storage_test():
     blob_list = []
     for blob in container_client.list_blobs():
-        print("\t Blob name: "+ container_name+'/'+  blob.name)
-        blob_list.append(blob)
+        #print("\t Blob name: "+ container_name+'/'+  blob.name)
+        blob_list.append(blob.name)
         
-    total_blobs = 'total blob files :' + str(len(blob_list))
-    return total_blobs
+    #total_blobs = 'total blob files :' + str(len(blob_list))
+    return blob_list
