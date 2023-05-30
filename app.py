@@ -26,4 +26,4 @@ def get_storage_test():
         blob_list.append(blob.name)
         
     #total_blobs = 'total blob files :' + str(len(blob_list))
-    return blob_list
+    return blob_list[0]
