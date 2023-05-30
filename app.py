@@ -27,3 +27,13 @@ def get_storage_test():
         
     #total_blobs = 'total blob files :' + str(len(blob_list))
     return blob_list[0]
+
+@app.route("/torch")
+def torch_test():
+    import torch
+    print(torch.__version__)
+    print(torch.cuda.is_available())
+    print(torch.cuda.device_count())
+    
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    print('Using device:', device)
