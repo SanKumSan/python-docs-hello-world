@@ -7,7 +7,7 @@ def hello():
 
 @app.route("/test")
 def hello1():
-    return "Hello Santhosh with Test"
+    return "Hello Santhosh with Test Done"
 
 import os
 from azure.storage.blob import BlobServiceClient
