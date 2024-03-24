@@ -1,6 +1,6 @@
-Flask>=2.0,<=2.1.1
+Flask
 azure-storage-blob
 azure-identity
-torch
-torchvision
+#torch
+#torchvision
 opencensus-ext-azure
